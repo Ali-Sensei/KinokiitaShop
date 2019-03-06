@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3652722C222FCCEA00CAC234 /* AmaticSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3652722A222FCCEA00CAC234 /* AmaticSC-Regular.ttf */; };
+		3652722D222FCCEA00CAC234 /* Amatic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3652722B222FCCEA00CAC234 /* Amatic-Bold.ttf */; };
 		365BD4D0222D4912008F9E2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365BD4CF222D4912008F9E2C /* AppDelegate.swift */; };
 		365BD4D2222D4912008F9E2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365BD4D1222D4912008F9E2C /* ViewController.swift */; };
 		365BD4D5222D4912008F9E2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365BD4D3222D4912008F9E2C /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3652722A222FCCEA00CAC234 /* AmaticSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AmaticSC-Regular.ttf"; sourceTree = "<group>"; };
+		3652722B222FCCEA00CAC234 /* Amatic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amatic-Bold.ttf"; sourceTree = "<group>"; };
 		365BD4CC222D4912008F9E2C /* CoffeeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		365BD4CF222D4912008F9E2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		365BD4D1222D4912008F9E2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 				365BD4CF222D4912008F9E2C /* AppDelegate.swift */,
 				365BD4D1222D4912008F9E2C /* ViewController.swift */,
 				365BD4D3222D4912008F9E2C /* Main.storyboard */,
+				3652722B222FCCEA00CAC234 /* Amatic-Bold.ttf */,
+				3652722A222FCCEA00CAC234 /* AmaticSC-Regular.ttf */,
 				36864B39222D73DC000D1E1F /* Coffee.swift */,
 				36864B3B222D7529000D1E1F /* SomeData.swift */,
 				36864B37222D7176000D1E1F /* CoffeeViewController.swift */,
@@ -183,8 +189,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3652722D222FCCEA00CAC234 /* Amatic-Bold.ttf in Resources */,
 				365BD4D7222D4913008F9E2C /* Assets.xcassets in Resources */,
 				365BD4D5222D4912008F9E2C /* Main.storyboard in Resources */,
+				3652722C222FCCEA00CAC234 /* AmaticSC-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

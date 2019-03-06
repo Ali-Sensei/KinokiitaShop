@@ -13,6 +13,7 @@ class CoffeeViewController: UITableViewController {
     var coffees = SomeData.generateCoffeesData()
 }
 
+/*
 extension CoffeeViewController
 {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -30,3 +31,4 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
     return cell
 }
 
+*/

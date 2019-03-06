@@ -9,8 +9,16 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Amatic-Bold.ttf">
+            <string>Amatic-Bold</string>
+        </array>
+        <array key="AmaticSC-Regular.ttf">
+            <string>AmaticSC-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Item 3-->
+        <!--Checkout-->
         <scene sceneID="UIA-So-Yhk">
             <objects>
                 <viewController id="mLi-be-iwh" sceneMemberID="viewController">
@@ -29,7 +37,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jb1-Sk-QCM"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 3" id="bRK-sN-VoM"/>
+                    <tabBarItem key="tabBarItem" title="Checkout" image="icons8-shopping-cart-50" id="bRK-sN-VoM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2sD-Tx-ZF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,13 +62,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Qgl-4R-bIc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Info" image="chat" id="JbW-tb-frW"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="icons8-about-50" id="JbW-tb-frW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mTZ-iw-Y2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="90" y="903"/>
         </scene>
-        <!--Item 4-->
+        <!--Settings-->
         <scene sceneID="uH8-qi-T7L">
             <objects>
                 <viewController id="cde-M4-SwA" sceneMemberID="viewController">
@@ -79,7 +87,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="nK6-LP-PqP"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 4" id="08R-VU-F6i"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="icons8-settings-50" id="08R-VU-F6i"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DxT-Kt-RJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,28 +101,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcD-ST-foF">
-                                <rect key="frame" x="129.51954979740185" y="318" width="154" height="30.000000000000014"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Schwifty's Coffee Shop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lse-Gs-Ddj">
+                                <rect key="frame" x="69" y="63" width="276" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Press here to continue"/>
+                                <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="51"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bPl-9X-jZh">
+                                <rect key="frame" x="0.0" y="713" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.99215686270000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nathan-dumlao-287719-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="aa3-DW-sYB">
+                                <rect key="frame" x="0.0" y="147" width="427" height="566"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcD-ST-foF">
+                                <rect key="frame" x="96" y="732" width="234" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmaticSC-Regular" family="Amatic SC" pointSize="40"/>
+                                <state key="normal" title="Press here to continue">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
-                                    <segue destination="Aqg-sx-YQ0" kind="presentation" id="xcb-4j-rR2"/>
+                                    <segue destination="Aqg-sx-YQ0" kind="presentation" id="5Pm-SK-iRo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ali's Drinkorium" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lse-Gs-Ddj">
-                                <rect key="frame" x="118.4509140541727" y="83" width="173.99999999999983" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="a-b-c-d-e-C-g-h-i-j-k-l" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqX-e2-bkI">
-                                <rect key="frame" x="38.203304915767148" y="396" width="334.00000000000006" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="o15-r5-XYl"/>
@@ -124,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xnQ-p1-4W3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1" y="134"/>
+            <point key="canvasLocation" x="0.0" y="133.92857142857142"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3eo-Ip-mXt">
@@ -154,23 +167,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schwifty's Coffee Shop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vqJ-Nu-Fbl">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="51"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="coffeeCell" textLabel="Smb-2R-zWg" detailTextLabel="hRb-nv-9nk" style="IBUITableViewCellStyleSubtitle" id="0xp-NZ-FTO">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="coffeeCell" textLabel="Smb-2R-zWg" detailTextLabel="hRb-nv-9nk" rowHeight="99" style="IBUITableViewCellStyleSubtitle" id="0xp-NZ-FTO">
+                                <rect key="frame" x="0.0" y="83" width="414" height="99"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0xp-NZ-FTO" id="xk6-Kw-5tS">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="98.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Smb-2R-zWg">
-                                            <rect key="frame" x="20.000000000000004" y="5" width="33.333333333333336" height="20.333333333333332"/>
+                                            <rect key="frame" x="20.000000000000004" y="29" width="33.333333333333336" height="20.333333333333332"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hRb-nv-9nk">
-                                            <rect key="frame" x="19.999999999999996" y="25.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <rect key="frame" x="19.999999999999996" y="52.333333333333329" width="43.666666666666664" height="14.333333333333334"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -189,13 +209,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ePp-A6-p30" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2216" y="137"/>
+            <point key="canvasLocation" x="2215.9420289855075" y="136.60714285714286"/>
         </scene>
         <!--Coffees-->
         <scene sceneID="EiC-ae-NTV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Lp-vx-fPZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Coffees" image="heart" id="wWU-Gk-j0b"/>
+                    <tabBarItem key="tabBarItem" title="Coffees" image="icons8-cafe-50" id="wWU-Gk-j0b"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YFp-lF-xtU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -212,7 +232,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chat" width="30" height="30"/>
-        <image name="heart" width="30" height="30"/>
+        <image name="icons8-about-50" width="37.5" height="37.5"/>
+        <image name="icons8-cafe-50" width="37.5" height="37.5"/>
+        <image name="icons8-settings-50" width="37.5" height="37.5"/>
+        <image name="icons8-shopping-cart-50" width="37.5" height="37.5"/>
+        <image name="nathan-dumlao-287719-unsplash" width="4480" height="6720"/>
     </resources>
 </document>
