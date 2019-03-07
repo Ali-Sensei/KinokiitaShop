@@ -15,7 +15,7 @@ final class SomeData
     // Looks at coffee struct
     static func generateCoffeesData() -> [Coffee]
     {
-        // returns three coffees to struct
+        // returns three instances of coffees to struct
         return [
             Coffee(name: "Latte", store: "Starbucks", rating: 5),
             Coffee(name: "Latte", store: "Costa", rating: 3),
